@@ -22,11 +22,18 @@
 		var uzmoduledemo = null;
 		var scrollPicture = null;
 		var moduleKnx = null;
+		var moduleGnoga = null;
 		var id;
 		apiready = function(){
 	    	uzmoduledemo = api.require('moduleDemo');
 	    	scrollPicture = api.require('scrollPicture');
 	    	moduleKnx = api.require('moduleKnx');
+	    	modulegnoga = api.require('modulegnoga');
+	    }
+	    function tohome(){
+	        modulegnoga.toHome(function(ret, err){
+				alert(JSON.stringify(ret));
+			});
 	    }
 		function bind(){
 	        moduleKnx.bind();
@@ -156,6 +163,8 @@
     <div id="main">
         <div class="clickbtn" tapmode="active" onclick="collection_upload()">采集上传心电数据</div>
         <div class="clickbtn" tapmode="active" onclick="playback()">回放心电数据</div>
+
+        <div class="clickbtn" tapmode="active" onclick="tohome()">搜索</div>
         <br>
     </div>
 </div>

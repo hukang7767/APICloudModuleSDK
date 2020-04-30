@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wave_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/measurement_bg">
+
+    <ScrollView
+        android:id="@+id/measurement_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/wave_bg">
+
+            <RelativeLayout
+                android:id="@+id/measurement_rl_chart_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/measurement_chart_title_height"
+                android:background="@color/measurement_title_bg">
+
+                <TextView
+                    android:id="@+id/activity_measurement_tv_chart_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="@dimen/measurement_tv_ml"
+                    android:text="@string/chart_title_ecg"
+                    android:textColor="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:id="@+id/line_charts_dot_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/activity_measurement_vp_chart_change"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/measurement_chart_pager_height"
+                android:layout_below="@+id/measurement_rl_chart_title"
+                android:background="@color/wave_bg" />
+
+            <com.alpha.modulegnoga.measurement.MeasurementGroupCards
+                android:id="@+id/activity_measurement_el_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_measurement_vp_chart_change"
+                android:scrollbars="none" />
+
+            <View
+                style="@style/line_h"
+                android:layout_below="@+id/activity_measurement_el_item" />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

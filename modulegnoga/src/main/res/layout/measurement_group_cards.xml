@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/params_group_cards_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/params_group_cards_padding"
+    android:paddingEnd="@dimen/params_group_cards_padding"
+    android:paddingStart="@dimen/params_group_cards_padding">
+
+    <LinearLayout
+        android:id="@+id/params_group_hemodynamics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/params_group_margin_top"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/params_group_title_hemodynamics"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/params_group_title_height"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/params_param_horizontal_margin"
+            android:paddingStart="@dimen/params_param_horizontal_margin"
+            android:text="@string/hemodynamics" />
+
+        <View style="@style/line_h" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/params_group_list_hemodynamics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/params_group_blood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/params_group_margin_top"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/params_group_title_blood"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/params_group_title_height"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/params_param_horizontal_margin"
+            android:paddingStart="@dimen/params_param_horizontal_margin"
+            android:text="@string/blood_gases" />
+
+        <View style="@style/line_h" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/params_group_list_blood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/params_group_hematology"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/params_group_margin_top"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/params_group_title_hematology"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/params_group_title_height"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/params_param_horizontal_margin"
+            android:paddingStart="@dimen/params_param_horizontal_margin"
+            android:text="@string/hematology" />
+
+        <View style="@style/line_h" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/params_group_list_hematology"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/params_group_biochemistry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/params_group_margin_top"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/params_group_title_biochemistry"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/params_group_title_height"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/params_param_horizontal_margin"
+            android:paddingStart="@dimen/params_param_horizontal_margin"
+            android:text="@string/biochemistry" />
+
+        <View style="@style/line_h" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/params_group_list_biochemistry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

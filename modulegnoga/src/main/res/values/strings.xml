@@ -1,0 +1,175 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Common -->
+    <string name="app_name">SingularSDKDemo</string>
+    <string name="ok" tools:ignore="ExtraTranslation">OK</string>
+    <string name="loading">Loading</string>
+
+    <string name="main_device">Device</string>
+    <string name="main_measurement">Measurement</string>
+    <string name="measurement_param">Parameter details</string>
+
+    <!-- Measurement module -->
+    <string name="insert_finger_mtx">Please insert your finger to the MTX to start measuring</string>
+    <string name="insert_finger_vsm">Please insert your finger to the VSM to start measuring</string>
+
+    <string name="connection_success">Connection success</string>
+    <string name="connection_failed">Connection failed</string>
+    <string name="connection_disconnected">Connection disconnected</string>
+    <string name="measure_ble_disconnect_content">Bluetooth disconnect, try reconnecting.</string>
+
+    <string name="error_parameter">parameter error</string>
+    <!-- common display param name -->
+    <string name="chart_title_ecg">TensorTip Mono ECG</string>
+    <string name="chart_title_bp">Blood Pressure Waveform</string>
+    <string name="chart_title_ppw">Pulse Waveform</string>
+
+    <string name="spo2">血氧饱和度</string>
+    <string name="blood_pressure">血压</string>
+    <string name="map">平均动脉压</string>
+    <string name="heart_rate">外周脉搏</string>
+    <string name="co">心输出量</string>
+    <string name="sv">心搏量</string>
+    <string name="bv">血液粘度</string>
+    <string name="ph">酸碱度</string>
+    <string name="pco2">二氧化碳分压</string>
+    <string name="po2">氧分压</string>
+    <string name="o2">总氧量</string>
+    <string name="co2">总二氧化碳量</string>
+    <string name="hgb">血红蛋白</string>
+    <string name="hct">红细胞压积</string>
+    <string name="rbc">红细胞</string>
+    <string name="hba1c">Glycosylated Hemoglobin</string>
+    <string name="cbg">Blood Glucose Level</string>
+
+    <string name="ra_spo2">SpO2</string>
+    <string name="ra_sis">SYS</string>
+    <string name="ra_dia">DIA</string>
+    <string name="ra_map">MAP</string>
+    <string name="ra_hr">HR</string>
+    <string name="ra_co">C.O</string>
+    <string name="ra_sv">SV</string>
+    <string name="ra_bv">BV</string>
+    <string name="ra_ph">pH</string>
+    <string name="ra_pco2">pCO2</string>
+    <string name="ra_po2">pO2</string>
+    <string name="ra_o2">O2</string>
+    <string name="ra_co2">CO2</string>
+    <string name="ra_hgb">Hgb</string>
+    <string name="ra_hct">Hct</string>
+    <string name="ra_rbc">RBC</string>
+    <string name="ra_hba1c">HbA1C</string>
+    <string name="ra_cbg">CBG</string>
+    <string name="sis">Systolic Blood Pressure</string>
+    <string name="dia">Diastolic Blood Pressure</string>
+    <string name="connection_symbol">-</string>
+
+    <string name="hemodynamics">血液动力学</string>
+    <string name="blood_gases">血气</string>
+    <string name="hematology">血液化学</string>
+    <string name="biochemistry">Biochemistry</string>
+    <string name="chart_type_sys">Sys</string>
+    <string name="chart_type_dia">Dia</string>
+    <string name="parameter_invalid">-.-</string>
+
+    <!-- common display param abbr -->
+    <string name="hemna_spo2">SpO2</string>
+    <string name="hemna_bp">BP</string>
+    <string name="hemna_map">MAP</string>
+    <string name="hemna_hr">HR</string>
+    <string name="hemna_co">C.O</string>
+    <string name="hemna_sv">SV</string>
+    <string name="hemna_bv">BV</string>
+    <string name="bg_ph">pH</string>
+    <string name="bg_pco2">pCO2</string>
+    <string name="bg_po2">pO2</string>
+    <string name="bg_o2">O2</string>
+    <string name="bm_co2">CO2</string>
+    <string name="hemto_hgb">Hgb</string>
+    <string name="hemto_hct">Hct</string>
+    <string name="hemto_rbc">RBC</string>
+    <string name="bm_hba1c">HbA1C</string>
+    <string name="bm_cbg">CBG</string>
+
+    <!-- display unit -->
+    <string name="unit_mmhg">mmHg</string>
+    <string name="unit_per">%</string>
+    <string name="unit_beats_min">beats/min</string>
+    <string name="unit_g_dl">g/dL</string>
+    <string name="unit_m_ul">M/µl</string>
+    <string name="unit_l_min">L/min</string>
+    <string name="unit_ml_dl">mL/dL</string>
+    <string name="unit_mmol_l">mmol/L</string>
+    <string name="unit_ml_beat">mL/beat</string>
+    <string name="unit_mg_dl">mg/dL</string>
+    <string name="unit_not_sure"> </string>
+
+    <string name="sys_blood_pressure">Systolic Blood Pressure</string>
+    <string name="dia_blood_pressure">Diastolic Blood Pressure</string>
+
+
+    <!--20180315-->
+    <string name="others">Others</string>
+    <string name="open_file">OPEN FILE</string>
+    <string name="body_temperature">Body Temperature</string>
+    <string name="bmi">BMI</string>
+    <string name="parameter_explanation">Parameter Explanation</string>
+    <string name="set_parameter_explanation_noti">Understand what your measurements mean</string>
+    <string name="bm_wbc">WBC</string>
+    <string name="ra_wbc">WBC</string>
+    <string name="bm_plt">Plt</string>
+    <string name="ra_plt">Plt</string>
+    <string name="bm_k">K</string>
+    <string name="ra_k">K</string>
+    <string name="bm_na">Na</string>
+    <string name="ra_na">Na</string>
+    <string name="bm_ca">Ca</string>
+    <string name="ra_ca">Ca</string>
+    <string name="bm_cl">Cl</string>
+    <string name="ra_cl">Cl</string>
+    <string name="bm_bili">tBili</string>
+    <string name="ra_bili">tBili</string>
+    <string name="bm_alb">Alb</string>
+    <string name="ra_alb">Alb</string>
+    <string name="bm_hpi">HPI</string>
+    <string name="ra_hpi">HPI</string>
+    <string name="bm_blvct">BLVCT</string>
+    <string name="ra_blvct">BLVCT</string>
+    <string name="bm_hco3">HCO3</string>
+    <string name="ra_hco3">HCO3</string>
+    <string name="bm_svo2">SvO2</string>
+    <string name="ra_svo2">SvO2</string>
+    <string name="param4">Param4</string>
+    <string name="param5">Param5</string>
+    <string name="what_does_this_mean">What does this mean?</string>
+    <string name="unit_109_l">10^9/L</string>
+    <string name="unit_umol_l">μmol/L</string>
+    <string name="unit_g_l">g/L</string>
+    <string name="unit_cm_sec">cm/sec</string>
+    <string name="unit_meq_l">mEq/L</string>
+    <string name="wbc">White Blood Cells</string>
+    <string name="plt">Platelets</string>
+    <string name="k">Potassium</string>
+    <string name="na">Sodium</string>
+    <string name="ca">Calcium</string>
+    <string name="cl">Chloride</string>
+    <string name="tBili">Total Bilirubin</string>
+    <string name="alb">Albumin</string>
+    <string name="hpi">Heart Pumping Intensity</string>
+    <string name="blvct">Blood Velocity</string>
+    <string name="hco3">Bicarbonate</string>
+    <string name="svo2">SvO2</string>
+
+    <string name="cnoga_support_link">https://cnogacare.co/support</string>
+
+    <string name="weight_history">Weight History</string>
+    <string name="weight_colon">Weight:</string>
+    <string name="bmi_colon">BMI:</string>
+
+
+    <string name="device_connected">Connected</string>
+    <string name="device_sending_pairing_request">Sending pairing request&#8230;</string>
+    <string name="version_warning_preview"> The app does not support the device version.\n\n To upload a new device version:</string>
+    <string name="version_warning_end">For support please contact: </string>
+    <string name="cnoga_support_email">support@cnoga.com</string>
+
+</resources>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/main_spacing"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/device_ble_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="监测是否支持蓝牙"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/device_open_ble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开蓝牙"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/scan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重新扫描"
+            android:textColor="@color/text_color_primary_white" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/connected_device_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/main_spacing"
+        android:layout_marginStart="@dimen/main_spacing"
+        android:layout_weight="1"
+        android:visibility="gone"
+        card_view:cardBackgroundColor="@color/measurement_bg"
+        card_view:cardCornerRadius="@dimen/common_card_corner_radius">
+
+
+        <RelativeLayout
+            android:id="@+id/device_item_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background"
+            android:focusable="false"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/device_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/device_status_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/device_horizontal_margin"
+                    android:layout_marginStart="@dimen/device_horizontal_margin"
+                    android:src="@mipmap/device_available" />
+
+                <TextView
+                    android:id="@+id/device_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/device_item_height"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:text="00:00:00:00:00:00"
+                    android:textColor="@color/text_color_secondary_white"
+                    android:textSize="@dimen/text_size5" />
+
+                <TextView
+                    android:id="@+id/device_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/device_status_iv"
+                    android:layout_toStartOf="@+id/device_address_tv"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color_primary_white"
+                    android:textSize="@dimen/text_size5"
+                    android:layout_toLeftOf="@+id/device_address_tv"
+                    android:layout_toRightOf="@+id/device_status_iv" />
+
+                <TextView
+                    android:id="@+id/measure_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:background="@color/text_color_line_white"
+                    android:padding="10dp"
+                    android:text="测量"
+                    android:textColor="@color/teal_300"
+                    android:textSize="@dimen/text_size5"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/device_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/device_title"
+                card_view:cardBackgroundColor="@color/cardview_light_background"
+                card_view:cardCornerRadius="@dimen/common_card_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1"
+                                android:padding="@dimen/main_spacing"
+                                android:text="设备类型"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/text_size3"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1"
+                                android:padding="@dimen/main_spacing"
+                                android:text="配对信息"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/text_size3"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:maxLines="1"
+                                android:padding="@dimen/main_spacing"
+                                android:text="是否连接"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/text_size3"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/device_type"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/main_spacing"
+                                    android:text=""
+                                    android:textAllCaps="false"
+                                    android:textSize="@dimen/text_size3"
+                                    android:textStyle="bold" />
+
+                                <ProgressBar
+                                    android:id="@+id/device_type_progress_bar"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:visibility="visible"/>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/pairing_code"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/main_spacing"
+                                    android:text=""
+                                    android:textAllCaps="false"
+                                    android:textSize="@dimen/text_size3"
+                                    android:textStyle="bold" />
+
+                                <ProgressBar
+                                    android:id="@+id/pairing_code_progress_bar"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:visibility="visible"/>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/is_connected"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/main_spacing"
+                                    android:text=""
+                                    android:textAllCaps="false"
+                                    android:textSize="@dimen/text_size3"
+                                    android:textStyle="bold" />
+
+                                <ProgressBar
+                                    android:id="@+id/is_connected_progress_bar"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:visibility="visible"/>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/disconnect_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/draw_padding_top"
+                        android:text="断开连接" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/common_primary_vertical_margin"
+        android:layout_marginEnd="@dimen/main_spacing"
+        android:layout_marginStart="@dimen/main_spacing"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        card_view:cardBackgroundColor="@color/cardview_light_background"
+        card_view:cardCornerRadius="@dimen/common_card_corner_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_color_line_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/device_horizontal_margin"
+                android:text="@string/device_available"
+                android:textColor="@color/text_color_primary_white"
+                android:textSize="@dimen/text_size4" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/device_available_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/license_expired_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="50dp"
+        android:text="SDK license expired.\nPlease contact CNOGA support."
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/text_size3"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</LinearLayout>

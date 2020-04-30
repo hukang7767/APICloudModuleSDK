@@ -27,6 +27,10 @@
 		{
 			"name":"moduleKnx",
 			"class":"com.apicloud.moduleknx.APIModuleknx"
+		},
+		{
+			"name":"modulegnoga",
+			"class":"com.alpha.modulegnoga.APIModuleGnoga"
 		}
 	]
 }

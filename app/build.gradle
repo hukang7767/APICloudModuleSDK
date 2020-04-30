@@ -8,7 +8,7 @@ android {
     //useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 21
         applicationId project.ANDROID_BUILD_APP_PKG
         targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
         versionCode Integer.parseInt(project.ANDROID_BUILD_VERSION_CODE)
@@ -33,12 +33,12 @@ android {
 
 repositories{
     flatDir{
-        dirs 'libs','../moduleknx/libs'
+        dirs 'libs','../moduleknx/libs','../modulegnoga/libs'
     }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:support-v4:26.0.1'
     implementation 'com.android.support:multidex:1.0.1'
     //5个模块
@@ -48,4 +48,5 @@ dependencies {
     implementation project(':moduleRefresh')
     implementation project(':moduleAppdelegate')
     implementation project(':moduleknx')
+    implementation project(':modulegnoga')
 }

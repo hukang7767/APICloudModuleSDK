@@ -12,17 +12,17 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int btn = 0x7f07003a;
-        public static final int text = 0x7f070184;
+        public static final int btn = 0x7f070045;
+        public static final int text = 0x7f0701de;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int mo_demo_main_activity = 0x7f090026;
+        public static final int mo_demo_main_activity = 0x7f090036;
     }
     public static final class string {
         private string() {}
 
-        public static final int app_name = 0x7f0b001f;
+        public static final int app_name = 0x7f0b0020;
     }
 }

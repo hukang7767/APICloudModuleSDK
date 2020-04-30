@@ -47,7 +47,6 @@ public class APIModuleknx extends UZModule {
         context().registerReceiver(mEcgUploadResultReceiver, intentFilter);
         mJsCallback = moduleContext;
         Intent intent = new Intent(context(), EcgCollectActivity.class);
-        Log.i("hukang", "jsmethod_collection: "+ECGGlobalSettings.getAppId());
         EcgUserInfo ecgUserInfo = new Gson().fromJson(moduleContext.get().toString(), EcgUserInfo.class);
         JSONObject result = new JSONObject();
         JSONObject err = new JSONObject();

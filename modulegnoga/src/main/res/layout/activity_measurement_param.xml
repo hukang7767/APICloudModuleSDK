@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/title_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/title_margin"
+            android:src="@drawable/title_close_selector"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/title_top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <com.cnoga.singular.mobile.sdk.measurement.ParamLineChartView
+        android:id="@+id/param_measurement_line_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/param_detail_play_control"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_detail_play_control_height"
+        android:background="@color/control_seek_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/param_detail_control_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/param_detail_control_icon_padding"
+            android:src="@mipmap/icon_pause"
+            android:tag="pause" />
+
+        <SeekBar
+            android:id="@+id/param_detail_control_seek_bar"
+            style="@style/Widget.SeekBar.Normal"
+            android:layout_width="@dimen/param_detail_seek_bar_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/param_detail_seek_bar_margin"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <com.alpha.modulegnoga.measurement.ParamDetailInfoView
+        android:id="@+id/param_measurement_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

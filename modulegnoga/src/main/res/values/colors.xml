@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#44bba6</color>
+
+    <color name="round_bg">#ff424242</color>
+    <color name="list_item_bg">#EEEEEE</color>
+
+    <!-- Text Color, suffix white means background is white -->
+    <color name="text_color_primary_white">#DE000000</color>
+    <color name="text_color_secondary_white">#8A000000</color>
+    <color name="text_color_hint_white">#61000000</color>
+    <color name="text_color_line_white">#1F000000</color>
+
+    <!-- Common -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="attachment_item_bg">#F0F0F0</color>
+
+    <color name="measurement_title_bg">#808080</color>
+    <color name="params_group_cards_bg">#F0F0F0</color>
+    <color name="record_play_bg">#e0444444</color>
+
+    <color name="wave_bg">#cbcbcb</color>
+    <color name="control_seek_bg">#bbbbbb</color>
+    <color name="dialog_title">#333333</color>
+    <color name="param_list_bg">#efefef</color>
+    <color name="param_detail_unit">#d4d4d4</color>
+    <color name="measurement_bg">#efefef</color>
+    <color name="chart_line">#44bba6</color>
+
+    <color name="teal_300">#4DB6AC</color>
+
+    <!-- dialog -->
+    <color name="dialog_item_normal">#999999</color>
+    <color name="dialog_picker_ok">#44BBA6</color>
+
+</resources>

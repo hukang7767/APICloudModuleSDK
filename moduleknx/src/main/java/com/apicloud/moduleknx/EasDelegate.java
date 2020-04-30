@@ -34,10 +34,10 @@ public class EasDelegate extends ApplicationDelegate {
 		ECGGlobalSettings.setSDKMode(0);
 		ECGGlobalSettings.setCollectMode(true);
 		//以下4个参数需要从爱心电后台申请后才可以使用，要使用自己公司的
-		ECGGlobalSettings.setAppId("33232453803379830771");
-		ECGGlobalSettings.setAppSecret("axd03e1178007707d9db97cbab03bab4cfb");
-		ECGGlobalSettings.setEcgCardNo("85141768946740048342");
-		ECGGlobalSettings.setEcgCardKey("24985093435");
+		ECGGlobalSettings.setAppId("84250563561310678874");
+		ECGGlobalSettings.setAppSecret("axdc59e5bd1b5159e1a86061b4569806d5f");
+		ECGGlobalSettings.setEcgCardNo("91983481838027566129");
+		ECGGlobalSettings.setEcgCardKey("171004017201");
 
 //		//init params
 //		ECGGlobalSettings.setSDKMode(0);

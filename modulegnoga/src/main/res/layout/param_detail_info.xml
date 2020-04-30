@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View style="@style/line_h" />
+
+        <RelativeLayout
+            android:id="@+id/param_detail_parameter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/param_detail_parameter_height"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/param_detail_parameter_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/measurement_param_item_padding"
+                android:text="@string/chart_type_sys"
+                android:textColor="@color/text_color_hint_white"
+                android:textSize="@dimen/param_detail_text_size" />
+
+            <com.cnoga.singular.mobile.sdk.measurement.ParamValueView
+                android:id="@+id/param_detail_parameter_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/param_detail_parameter_unit"
+                android:paddingRight="@dimen/measurement_param_item_padding"
+                app:text="@string/parameter_invalid"
+                app:textColor="@color/dialog_title"
+                app:textSize="@dimen/param_detail_text_size" />
+
+            <TextView
+                android:id="@+id/param_detail_parameter_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/measurement_param_item_padding"
+                android:text="@string/unit_mmhg"
+                android:textColor="@color/param_detail_unit"
+                android:textSize="@dimen/param_detail_unit_size" />
+
+        </RelativeLayout>
+
+        <View style="@style/line_h" />
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/param_detail_parameter_bp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/param_detail_parameter_height"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/param_detail_dia_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/measurement_param_item_padding"
+            android:text="@string/chart_type_dia"
+            android:textColor="@color/text_color_hint_white"
+            android:textSize="@dimen/param_detail_text_size" />
+
+        <com.cnoga.singular.mobile.sdk.measurement.ParamValueView
+            android:id="@+id/param_detail_dia_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/param_detail_dia_unit"
+            android:paddingRight="@dimen/measurement_param_item_padding"
+            app:text="@string/parameter_invalid"
+            app:textColor="@color/dialog_title"
+            app:textSize="@dimen/param_detail_text_size" />
+
+        <TextView
+            android:id="@+id/param_detail_dia_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/param_detail_dia_value"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingRight="@dimen/measurement_param_item_padding"
+            android:text="@string/unit_mmhg"
+            android:textColor="@color/param_detail_unit"
+            android:textSize="@dimen/param_detail_unit_size" />
+
+        <View
+            style="@style/line_h"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

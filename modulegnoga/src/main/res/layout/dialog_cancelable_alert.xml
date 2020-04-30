@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_layout_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dialog_ok_margin">
+
+    <TextView
+        android:id="@+id/dialog_alert_cancelable_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height"
+        android:paddingLeft="@dimen/dialog_ok_margin"
+        android:paddingRight="@dimen/dialog_ok_margin"
+        android:textColor="@color/dialog_title"
+        android:textSize="@dimen/dialog_alert_title_size"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/dialog_alert_cancelable_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dialog_ok_margin"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dialog_ok_margin"
+        android:paddingRight="@dimen/dialog_ok_margin"
+        android:text="@string/exit_app"
+        android:textColor="@color/dialog_title"
+        android:textSize="@dimen/dialog_alert_content_size" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_ok_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_alert_cancelable_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_ok_height"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dialog_ok_margin"
+            android:gravity="center_vertical"
+            android:text="@string/dialog_ok"
+            android:textColor="@color/dialog_picker_ok"
+            android:textSize="@dimen/dialog_ok_size" />
+
+        <TextView
+            android:id="@+id/dialog_alert_cancelable_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dialog_ok_height"
+            android:layout_marginEnd="@dimen/dialog_ok_margin"
+            android:layout_toStartOf="@id/dialog_alert_cancelable_ok"
+            android:gravity="center_vertical"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/dialog_picker_ok"
+            android:textSize="@dimen/dialog_ok_size" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,2 +1,0 @@
-# Referenced at C:\Users\Administrator\Desktop\ModulesDevProject_Android\androidstudio\APICloudModuleSDK\app\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:34
--keep class com.uzmap.pkg.uzapp.UZApplication { <init>(...); }

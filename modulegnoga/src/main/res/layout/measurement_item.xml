@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/report_item_symbol"
+        android:layout_width="@dimen/title_height"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/range_symbol_bg"
+        android:gravity="center"
+        android:text="@string/chart_type_sys"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dialog_ok_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/report_item_content"
+        android:layout_width="@dimen/logout_btn_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/draw_padding"
+        android:layout_toEndOf="@id/report_item_symbol"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="@dimen/draw_crevice_height"
+        android:text="param_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/param_text_size" />
+
+    <TextView
+        android:id="@+id/report_item_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/parameter_invalid"
+        android:textColor="@color/black"
+        android:textSize="@dimen/param_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/report_item_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/report_item_value"
+        android:text="@string/unit_mmhg"
+        android:textColor="@color/black"
+        android:textSize="@dimen/param_text_size" />
+
+
+
+
+</RelativeLayout>
